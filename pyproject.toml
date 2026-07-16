@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gldframes"
+version = "0.1.0"
+description = "Offline Linux subtitle generator and editor for vertical short-form videos"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT" }
+authors = [{ name = "GLDFrames" }]
+dependencies = [
+  "PySide6>=6.7",
+  "faster-whisper>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+gldframes = "gldframes.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
