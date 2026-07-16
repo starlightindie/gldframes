@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=GLDFrames
+Comment=Offline subtitle generator and editor for Shorts videos
+Exec=gldframes
+Icon=gldframes
+Categories=AudioVideo;Video;Qt;
+Terminal=false
+MimeType=video/mp4;video/quicktime;video/x-matroska;
